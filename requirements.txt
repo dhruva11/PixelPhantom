@@ -50,7 +50,7 @@ fernet==1.0.1
 filelock==3.13.1
 fileupload==0.1.5
 Flask==3.0.2
-Flask-Cors==4.0.0
+Flask-Cors==4.0.2
 flaskwebgui==1.1.1
 flatbuffers==24.3.25
 fonttools==4.47.2

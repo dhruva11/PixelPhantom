@@ -7,4 +7,4 @@ pillow==10.2.0
 tensorflow==2.18.0
 uvicorn==0.29.0
 waitress==3.0.0
-Werkzeug==3.0.1
+Werkzeug==3.0.6

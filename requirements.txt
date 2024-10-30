@@ -38,7 +38,7 @@ cycler==0.12.1
 debugpy==1.8.0
 decorator==5.1.1
 defusedxml==0.7.1
-Django==5.0.2
+Django==5.0.9
 dm-tree==0.1.8
 docopt==0.6.2
 efficientnet_pytorch==0.7.1

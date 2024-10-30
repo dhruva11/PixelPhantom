@@ -1,0 +1,99 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.main {
+    padding: 20px;
+    text-align: center;
+}
+
+.choose-image-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+button {
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.result {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.result.positive {
+    color: #d9534f;
+}
+
+.result.negative {
+    color: #5cb85c;
+}
+
+/* Style for "Predict" and "Go Back" buttons */
+.button, button {
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    text-decoration: none; /* Ensure links don't have underline */
+    display: inline-block; /* Allows it to behave like a button */
+}
+
+.button:hover, button:hover {
+    background-color: #27ae60;
+}
+

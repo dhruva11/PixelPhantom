@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="COVID Prediction result based on uploaded CT scan images.">
+    <meta property="og:title" content="COVID Prediction Result">
+    <meta property="og:description" content="AI-powered COVID-19 prediction outcome from uploaded CT scans.">
+    <meta property="og:image" content="{{ url_for('uploaded_file', filename=result_image) }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>COVID Prediction Result</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>COVID Prediction Result</h1>
+        </header>
+        
+        <!-- Add loading spinner for better UX -->
+        <div id="loading-spinner" style="display: none;">
+            <p>Loading...</p>
+        </div>
+
+        <!-- Main content area with aria-live for accessibility -->
+        <main class="main" aria-live="polite">
+            <div class="result {{ 'positive' if prediction == 'COVID-19 Positive' else 'negative' }}">
+                {{ prediction }} - Confidence: {{ confidence }}%
+            </div>
+
+            <a href="/" class="button">Go Back</a>
+        </main>
+    </div>
+
+    <!-- Loading spinner script -->
+    <script>
+        // Show loading spinner on form submit
+        document.querySelector("form").onsubmit = function() {
+            document.getElementById("loading-spinner").style.display = "block";
+        };
+    </script>
+</body>
+</html>

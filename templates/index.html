@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+    <title>COVID Prediction</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>COVID Prediction</h1>
+        </div>
+        <div class="main">
+            <form action="/predict" method="post" enctype="multipart/form-data">
+                <!-- Use the new class for the combined "Choose an Image" button -->
+                <label class="choose-image-button" for="file">Choose an Image</label>
+                <!-- Hide the original file input -->
+                <input type="file" name="file" id="file" accept=".jpg, .jpeg, .png" onchange="showSelectedImage(this)" required>
+                <div id="selected-image"></div>
+                <button type="submit">Predict</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -190,7 +190,7 @@ soupsieve==2.5
 SpeechRecognition==3.10.0
 sqlparse==0.4.4
 stack-data==0.6.3
-starlette==0.36.3
+starlette==0.40.0
 sympy==1.12
 tensorboard==2.18.0
 tensorboard-data-server==0.7.2

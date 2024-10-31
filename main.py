@@ -80,5 +80,6 @@ def uploaded_file(filename):
     return send_from_directory(covid_ct.config['UPLOAD_FOLDER'], filename)
     
 # Run the app
-if __name__ == '__main__':
-    covid_ct.run(debug=True, use_reloader=False)
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))  # default to 5000 if PORT not set
+    covid_ct.run(debug=True, host="0.0.0.0", port=port)

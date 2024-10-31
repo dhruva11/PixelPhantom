@@ -81,5 +81,4 @@ def uploaded_file(filename):
     
 # Run the app
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))  # default to 5000 if PORT not set
-    covid_ct.run(debug=True, host="0.0.0.0", port=port)
+    covid_ct.run()
